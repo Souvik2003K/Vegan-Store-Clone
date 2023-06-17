@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:ital,wght@1,200;1,400;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* =============================  navbar  ========================== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav .logo img{
+    height: 40px;
+    margin: 0 40px;
+}
+
+nav .links{
+    display: flex;
+}
+
+.drawer .dropdown{
+    display: none;
+}
+
+.nav-links , .links .btn{
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.drawer:hover .dropdown{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 6%;
+    right: 23%;
+    background-color: white;
+    padding: 25px;
+    text-align: start;
+    border-top: 3px solid #91ac41;
+}
+
+.dropdown .one{
+    border-bottom: 1px solid #b9b9c1;
+    margin-bottom: 10px;
+}
+
+.dropdown .one-no{
+    border-bottom: none;
+}
+
+.links .btn{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 6px 24px;
+    border-radius: 4px;
+    border: none;
+}
+
+
+/* ===============  sec 1 ( main picture ) ================ */
+
+.sec1{
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    height: 100vh;
+    width: 99vw;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sec1 .moto{
+    position: relative;
+    top: 30%;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.sec1 .desc{
+    position: relative;
+    top: 35%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ===============  sec 2 ( multicolor ) ================ */
+
+.sec2{
+    /* height: 450px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+}
+.sec2 .step1{
+    background-color: #5acda6;
+}
+.sec2 .step2{
+    background-color: #91ac41;
+}
+.sec2 .step3{
+    background-color: #e4b476;
+}
+.sec2 .step4{
+    background-color: #f69dad;
+}
+.sec2 .steps{
+    padding: 40px;
+    padding-top: 100px;
+}
+.steps .fa-5x,
+.steps .head,
+.steps .body{
+    margin-bottom: 25px;
+}
+
+.steps .fa-5x:hover{
+    transform: scale(1.2);
+}
+
+.steps .body{
+    word-wrap: break-word;
+}
+
+
+
+/* ============ sec 3 ( bisque color ) =============== */
+
+.sec3{
+    background-color: #f7eee2;
+    /* height: 600px; */
+    text-align: center;
+    padding-top: 150px;
+}
+
+.sec3 .tag{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.sec3 .store{
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight:600px;
+}
+
+.sec3 .fact{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.sec3 .sec3-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.sec3-2 .boxes{
+    padding: 20px 30px;
+}
+
+.boxes .icons{
+    color: white;
+    background-color: #e3b375;
+    font-size: 60px;
+    padding: 30px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.boxes .icons:hover{
+    transform: scale(1.2);
+}
+
+.boxes .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight:600px;
+    margin-bottom: 30px;
+}
+
+.boxes .facts{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500px;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+}
+
+/* ============ sec 4 ( testimonial )  ============= */
+
+.sec4{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sec4 .tag{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.sec4 .store{
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight:600px;
+}
+
+.sec4 .fact{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.sec4 .sec4-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.sec4-2 .cards{
+    background-color: #f5f6fb;
+    border-radius: 45px 0px 45px 45px;
+    margin: auto 20px;
+    height: 350px;
+    padding: 20px;
+}
+
+.sec4-2 .cards:hover{
+    box-shadow: 1px 1px 1px 1px #ececec;
+}
+
+.sec4-2 .card1{
+    height: 350px;
+}
+.sec4-2 .card2{
+    height: 330px;
+}
+.sec4-2 .card3{
+    height: 380px;
+}
+
+.cards img{
+    width: 80px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.cards .msg{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    margin-bottom: 25px;
+}
+
+.cards .author{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cards .desig{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+}
+
+/* ============ sec 5 ( strawberry ) ============== */
+
+.sec5{
+    display: flex;
+}
+
+.sec5 .strawberry{
+    width: 65%;
+}
+
+.sec5 .follow{
+    text-align: start;
+    padding: 80px 120px;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-size: cover;
+}
+
+.sec5 .follow .head{
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.sec5 .follow .desc{
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.sec5 .follow .inp{
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 20px 10px;
+    display: block;
+    width: 100%;
+}
+
+.sec5 .follow .inp::placeholder{
+    color: #8b8b99;
+    font-size: 18px;
+}
+
+.sec5 .follow .btn{
+    padding: 15px;
+    width: 50%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f69dad;
+    color: white;
+}
+
+.sec5 .follow .btn:hover{
+    background: none;
+    border: 1px solid #f69dad;
+    color: #f69dad;
+}
+
+/* ============ sec 6 ( figures ) =========== */
+
+.sec6{
+    background-color: #f6fcfa;
+}
+
+.sec6 .fig-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fig h1{
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.fig p{
+    color:#8ee6c5;
+    margin-bottom: 50px;
+}
+
+
+/* ============ sec 7 ( vimeo video ) ============== */
+
+.title h1{
+    font-size: 44px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.title .line{
+    height: 2px;
+    width: 96px;
+    margin: 40px auto;
+    background-color: #e4b476;
+}
+
+.vid{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vid iframe{
+    height: 450px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* ============ sec 8 ( address ) ============== */
+
+.sec8{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.sec8 .tag{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.sec8 .head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight:600px;
+    margin-bottom: 20px;
+}
+
+.sec8 .desc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+
+.add1 , .add2{
+    margin-bottom: 40px;
+}
+
+.add .des{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.sec8 .touch{
+    padding: auto 60px;
+}
+
+.touch input{
+    display: block;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #d6d6e3;
+    outline: none;
+}
+
+.touch textarea{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #d6d6e3;
+    outline: none;
+}
+
+.touch .btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 14px 34px;
+    border-radius: 4px;
+    border: none;
+    margin: 10px auto;
+}
+
+/* ============================= footer ========================== */
+
+footer{
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ================== media queries ============================ */
+
+/* 802 */
+@media screen and (max-width:900px) {   
+
+    /*============== navbar ===============*/
+
+    .drawer, .nav-links{
+        display: none;
+    }
+
+    /*============== sec - 1 (main picture) ===============*/
+
+    .sec1 .moto{
+        font-size: 32px;
+    }
+    .sec1 .desc{
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    /*============== sec - 2 (multicolor) ===============*/
+
+    .sec2{
+        display: block;
+    }
+
+    /*============== sec - 3 (bisque color) ===============*/
+
+    .sec3 .store{
+        font-size: 36px;
+    }
+    .sec3 .fact{
+        padding: 10px;
+    }
+    .sec3 .sec3-2{
+        display: block;
+    }
+
+    /*============== sec - 4 (testimonial) ===============*/
+
+    .sec4 .store{
+        font-size: 36px;
+    }
+    .sec4 .fact{
+        padding: 10px;
+    }
+    .sec4 .sec4-2{
+        display: block;
+    }
+    .sec4-2 .cards{
+        width: 80%;
+        margin: 20px auto;
+        height: fit-content;
+    }
+
+    /*============== sec - 5 (strawberry) ===============*/
+
+    .sec5{
+        display: block;
+    }
+    .sec5 .strawberry{
+        width: 100%;
+    }
+    .sec5 .follow{
+        padding: 40px 30px;
+    }
+    .sec5 .follow .head{
+        font-size: 32px;
+        width: 95%;
+    }
+    .sec5 .follow .desc{
+        padding: 10px;
+        width: 95%;
+    }
+    .sec5 .follow .btn{
+        width: 25%;
+        width: fit-content;
+    }
+
+    
+    /*============== sec - 6 (figures) ===============*/
+
+    .sec6{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sec6 .fig-box{
+        display: block;
+    }
+
+    /*============== sec - 7 (vimeo video) ===============*/
+
+    .sec7 .vid iframe{
+        max-width: 90%;
+    }
+
+    /*============== sec - 8 (address) ===============*/
+
+    .sec8{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .sec8-2 input{
+        width: 100%;
+    }
+    .sec8-2 textarea{
+        width: 100%;
+    }
+
+    /*============== footer ===============*/
+
+}
+
